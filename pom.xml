@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>test</groupId>
+    <artifactId>test</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <!--<dependencies>-->
+    <!--<dependency>-->
+        <!--<groupId>org.apache.flink</groupId>-->
+        <!--<artifactId>flink-clients_2.11</artifactId>-->
+        <!--<version>1.12.0</version>-->
+    <!--</dependency>-->
+
+    <!--&lt;!&ndash;flink和kafka连接的依赖，因为flink要去连接kafka&ndash;&gt;-->
+    <!--<dependency>-->
+        <!--<groupId>org.apache.flink</groupId>-->
+        <!--<artifactId>flink-connector-kafka-0.11_2.11</artifactId>-->
+        <!--<version>1.11.2</version>-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+        <!--<groupId>mysql</groupId>-->
+        <!--<artifactId>mysql-connector-java</artifactId>-->
+        <!--<version>5.1.44</version>-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+        <!--<groupId>org.apache.flink</groupId>-->
+        <!--<artifactId>flink-table-planner_2.11</artifactId>-->
+        <!--<version>1.12.0</version>-->
+        <!--&lt;!&ndash;<scope>provided</scope>&ndash;&gt;-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+        <!--<groupId>org.apache.flink</groupId>-->
+        <!--<artifactId>flink-table-planner-blink_2.11</artifactId>-->
+        <!--<version>1.12.0</version>-->
+        <!--&lt;!&ndash;<scope>provided</scope>&ndash;&gt;-->
+    <!--</dependency>-->
+
+    <!--&lt;!&ndash;        <dependency>&ndash;&gt;-->
+    <!--&lt;!&ndash;            <groupId>org.apache.flink</groupId>&ndash;&gt;-->
+    <!--&lt;!&ndash;            <artifactId>flink-table-common</artifactId>&ndash;&gt;-->
+    <!--&lt;!&ndash;            <version>1.10.0</version>&ndash;&gt;-->
+    <!--&lt;!&ndash;        </dependency>&ndash;&gt;-->
+
+    <!--<dependency>-->
+        <!--<groupId>de.unkrig.jdisasm</groupId>-->
+        <!--<artifactId>jdisasm</artifactId>-->
+        <!--<version>1.0.5</version>-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+        <!--<groupId>com.alibaba</groupId>-->
+        <!--<artifactId>fastjson</artifactId>-->
+        <!--<version>1.2.68</version>-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+        <!--<groupId>org.apache.flink</groupId>-->
+        <!--<artifactId>flink-connector-filesystem_2.11</artifactId>-->
+        <!--<version>1.11.0</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+        <!--<groupId>org.apache.hadoop</groupId>-->
+        <!--<artifactId>hadoop-hdfs</artifactId>-->
+        <!--<version>2.7.2</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+        <!--<groupId>org.apache.hadoop</groupId>-->
+        <!--<artifactId>hadoop-common</artifactId>-->
+        <!--<version>2.7.2</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+        <!--<groupId>org.apache.hadoop</groupId>-->
+        <!--<artifactId>hadoop-client</artifactId>-->
+        <!--<version>2.7.2</version>-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+        <!--<groupId>junit</groupId>-->
+        <!--<artifactId>junit</artifactId>-->
+        <!--<version>4.12</version>-->
+        <!--<scope>test</scope>-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+        <!--<groupId>org.apache.httpcomponents</groupId>-->
+        <!--<artifactId>httpclient</artifactId>-->
+        <!--<version>4.5.3</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+        <!--<groupId>org.apache.httpcomponents</groupId>-->
+        <!--<artifactId>httpcore</artifactId>-->
+        <!--<version>4.4.5</version>-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+        <!--<groupId>com.google.guava</groupId>-->
+        <!--<artifactId>guava</artifactId>-->
+        <!--<version>21.0</version>-->
+        <!--&lt;!&ndash;            <type>bundle</type>&ndash;&gt;-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+        <!--<groupId>ru.yandex.clickhouse</groupId>-->
+        <!--<artifactId>clickhouse-jdbc</artifactId>-->
+        <!--<version>0.1.40</version>-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+        <!--<groupId>org.apache.flink</groupId>-->
+        <!--<artifactId>flink-connector-jdbc_2.11</artifactId>-->
+        <!--<version>1.12.0</version>-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+        <!--<groupId>javax.mail</groupId>-->
+        <!--<artifactId>mail</artifactId>-->
+        <!--<version>1.4.7</version>-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+        <!--<groupId>com.alibaba</groupId>-->
+        <!--<artifactId>druid</artifactId>-->
+        <!--<version>1.1.16</version>-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+        <!--<groupId>org.apache.hbase</groupId>-->
+        <!--<artifactId>hbase-server</artifactId>-->
+        <!--<version>1.3.1</version>-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+        <!--<groupId>org.apache.hbase</groupId>-->
+        <!--<artifactId>hbase-common</artifactId>-->
+        <!--<version>1.3.1</version>-->
+    <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.apache.flink</groupId>-->
+            <!--<artifactId>flink-table-api-java-bridge_2.11</artifactId>-->
+            <!--<version>1.12.0</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.apache.flink</groupId>-->
+            <!--<artifactId>flink-table-planner-blink_2.11</artifactId>-->
+            <!--<version>1.12.0</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.apache.flink</groupId>-->
+            <!--<artifactId>flink-table</artifactId>-->
+            <!--<version>1.12.0</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.apache.flink</groupId>-->
+            <!--<artifactId>flink-table-api-java</artifactId>-->
+            <!--<version>1.12.0</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.apache.flink</groupId>-->
+            <!--<artifactId>flink-table-runtime-blink_2.11</artifactId>-->
+            <!--<version>1.12.0</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.apache.flink</groupId>-->
+            <!--<artifactId>flink-table-common</artifactId>-->
+            <!--<version>1.12.0</version>-->
+        <!--</dependency>-->
+
+    <!--&lt;!&ndash;hadoop-client  3.1.3&ndash;&gt;-->
+    <!--&lt;!&ndash;https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-client/3.1.3&ndash;&gt;-->
+<!--</dependencies>-->
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <flink.version>1.12.0</flink.version>
+        <java.version>1.8</java.version>
+        <scala.binary.version>2.11</scala.binary.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-streaming-java_${scala.binary.version}</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-clients_2.11</artifactId>
+            <version>1.12.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-scala_${scala.binary.version}</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.apache.flink</groupId>-->
+            <!--<artifactId>flink-table-planner-blink_${scala.version}</artifactId>-->
+            <!--<version>1.10.0</version>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-table-planner-blink_2.11</artifactId>
+            <version>1.10.0</version>
+        </dependency>
+
+        <dependency>
+        <groupId>org.apache.flink</groupId>
+         <artifactId>flink-table-planner-blink_2.11</artifactId>
+            <version>1.10.0</version>
+        </dependency>
+
+        <!-- Either... -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-table-api-java-bridge_${scala.binary.version}</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-table-planner_${scala.binary.version}</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-table-planner-blink_${scala.binary.version}</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-streaming-scala_${scala.binary.version}</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-table-common</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-clients_${scala.binary.version}</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
