@@ -42,7 +42,7 @@ public class StreamingTopN {
                 + "     userID STRING, "
                 + "     clickPV BIGINT "
                 + ") with ( "
-                + "    'connector.type' = 'jdbc', "
+                + "    'connector.type' =        'jdbc', "
                 + "    'connector.url' = 'jdbc:mysql://hadoop105:3306/bigdata', "
                 + "    'connector.table' = 't_product_click_topn', "
                 + "    'connector.username' = 'root', "
